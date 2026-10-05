@@ -49,7 +49,7 @@ if "game_number" not in st.session_state:
 st.subheader("Make a guess")
 
 st.info(
-    f"Guess a number between 1 and 100. "
+    f"Guess a number between {low} and {high}. "#FIXME #Use the values from low and high based on difficulty chosen
     f"Attempts left: {attempt_limit - st.session_state.attempts}"
 )
 
